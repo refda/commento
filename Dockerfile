@@ -42,6 +42,7 @@ COPY --from=api-build /go/src/commento/api/build/${RELEASE}/commento /commento/c
 COPY --from=frontend-build /commento/frontend/build/${RELEASE}/js /commento/js
 COPY --from=frontend-build /commento/frontend/build/${RELEASE}/css /commento/css
 COPY --from=frontend-build /commento/frontend/build/${RELEASE}/images /commento/images
+COPY --from=frontend-build /commento/frontend/build/${RELEASE}//i18n /commento//i18n
 COPY --from=frontend-build /commento/frontend/build/${RELEASE}/fonts /commento/fonts
 COPY --from=frontend-build /commento/frontend/build/${RELEASE}/*.html /commento/
 COPY --from=templates-db-build /commento/templates/build/${RELEASE}/templates /commento/templates/
