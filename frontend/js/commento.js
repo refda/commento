@@ -638,7 +638,7 @@
     if (!requireIdentification && edit !== true) {
       append(textareaSuperContainer, anonymousCheckboxContainer);
     }
-    //append(textareaSuperContainer, markdownButton);
+    append(textareaSuperContainer, markdownButton);
 
     return textareaSuperContainer;
   }
