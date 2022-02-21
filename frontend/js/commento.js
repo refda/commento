@@ -430,8 +430,7 @@
     append(aContainer, a);
     append(footer, aContainer);
 
-    //return footer;
-    return "";
+    return footer;
   }
 
 
